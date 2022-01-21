@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Welcome To Ros Fazrina Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body> <body background="images/bg4.jpg">
+
+<p align="right"><audio controls autoplay>
+    <source src="soundd/intro.mp3" type="audio/mpeg">
+  </audio>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-pink w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3><b>Ros Fazrina<br>Webpage</b></h3>
+    <p align="justify"><a href="images/ROS FAZRINA ROSZAIMI.jpg" target="_blank"><img src="images/ROS FAZRINA ROSZAIMI.jpg" style="width:45%;" class="w3-round"><br><br></a></p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink"><img src="images/bhome.png"></a> 
+    <a href="summary.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink"><img src="images/bsum.png"></a>
+    <a href="objective.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink"><img src="images/bobj.png"></a> 
+    <a href="edu.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink"><img src="images/bedu.png"></a></a>
+    <a href="cur.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink"><img src="images/bcur.png"></a>
+    <a href="skills.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink"><img src="images/bskills.png"></a> 
+    <a href="exp.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink"><img src="images/bexp.png"></a> 
+    <a href="achieve.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink"><img src="images/bach.png"></a>  
+    <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink"><img src="images/bpg.png"></a>   
+    <a href="ref.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink"><img src="images/bref.png"></a> 
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink"><img src="images/bc.png"></a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+
+  <!-- Content -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-purple"><b>My Education</b></h1>
+    <hr style="width:50px;border:5px solid purple" class="w3-round">
+    <p align="justify">
+<img src="images/uitm.gif" align="left" width="210" height="210"><br><br><b>Universiti Teknologi Mara Kota Bharu</b>
+<p align="justify"><font face="arial" size="3" color="black">Date: October 2020 – Current
+<p>University: UiTM Kota Bharu
+<p>Level of Study: Degree
+<p>Field: BSc of Business Administration (Hons) Marketing
+<hr size="2">
+<img src="images/smktip2.jpg" align="left" width="210" height="210"><br><br><b>SMK Tengku Indra Petra</b>
+<p align="justify"><font face="arial" size="3" color="black">Date: Mei 2018 – 2019
+<p>School: SMK Tengku Indra Petra
+<p>Level of Study: STPM
+<p>Field: Social Science
+<hr size="2">
+<img src="images/smksa4.jpg" align="left" width="210" height="210"><br><br><b>SMK Sungai Asap</b>
+<p align="justify"><font face="arial" size="3" color="black">Date: Mei 2013 – 2017
+<p>School: SMK Sungai Asap
+<p>Level of Study: SPM
+<p>Field: Pure Science
+
+    </p>
+  </div>
+  
+  
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Copyright by Ros Fazrina © 2021</a></p></div>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
